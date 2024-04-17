@@ -4,12 +4,20 @@
 
 :root {
   --screen-width: 100vw;
+  --main-color: rgb(91 33 182 / 1);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {}
+  :root {
+  }
 }
 
+input{
+  outline: none;
+}
+textarea{
+  resize: none;
+}
 
 .shadow-1 {
   position: absolute;
@@ -62,7 +70,7 @@
   );
 }
 
-.rightBox{
+.rightBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,6 +78,19 @@
   user-select: none;
 }
 
-.rightBox:hover{
-  background-color: blueviolet !important;
+.rightBox:hover,
+.active {
+  background-color: var(--main-color);
+}
+
+.game_title {
+  font-size: 95px;
+  line-height: 140px;
+  color: #ffffff;
+}
+
+.experience_title {
+  font-weight: 400;
+  line-height: 45px;
+  color: #ffffff;
 }

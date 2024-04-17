@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Logo from "@/components/Logo";
 import RightTab from "@/components/RightTab";
+import "@/assets/font.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
           <Logo />
           <div className="container m-auto h-screen">
             <RightTab />
-            <div className="w-full bg-sky-700 h-screen md:w-1/2 flex justify-center items-center">
+            <div className="w-full h-screen md:w-1/2 flex justify-center items-center">
               {children}
             </div>
           </div>
