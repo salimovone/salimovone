@@ -12,6 +12,10 @@
   }
 }
 
+*{
+  font-family: jetbrains-mono;
+}
+
 input{
   outline: none;
 }
