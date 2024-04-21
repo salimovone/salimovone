@@ -1,57 +1,34 @@
 "use client";
+import { useEffect, useState } from "react";
 import styles from "./skills.module.css";
+import { get, getDatabase, ref } from "firebase/database";
+import app from "@/firebaseConfig";
 
 const Skills = () => {
+  const [skills, setSkills] = useState([])
 
-  let skills = [
-    {
-      id: 1,
-      value: "salom1",
-    },
-    {
-      id: 2,
-      value: "salom2",
-    },
-    {
-      id: 3,
-      value: "salom3",
-    },
-    {
-      id: 4,
-      value: "salom4",
-    },
-    {
-      id: 5,
-      value: "salom5",
-    },
-    {
-      id: 6,
-      value: "salom6",
-    },
-    {
-      id: 7,
-      value: "salom7",
-    },
-    {
-      id: 8,
-      value: "salom8",
-    },
-    {
-      id: 9,
-      value: "salom9",
-    },
-    {
-      id: 10,
-      value: "salom10",
-    },
-  ];
+  const fetchData = async () => {
+    const db = getDatabase(app)
+    const dbRef = ref(db, "data/skills")
+    const snapshot = await get(dbRef)
+    if(snapshot.exists()){
+      console.log(snapshot.val());
+      setSkills(Object.values(snapshot.val()))
+    } else {
+      alert("no data")
+    }
+  }
+
+  useEffect(()=>{
+    fetchData()
+  },[])
 
   return (
     <div className="h-screen w-full text-white flex items-center px-5">
       <ul className={`${styles.ul}`}>
-        {skills.map((item) => (
-          <li key={item.id} className={`${styles.li}`}>
-            {item.value}
+        {skills.map((item, index) => (
+          <li key={index + 1} className={`${styles.li}`}>
+            {item?.value}
           </li>
         ))}
       </ul>

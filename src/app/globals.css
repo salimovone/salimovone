@@ -103,3 +103,21 @@ textarea{
   line-height: 45px;
   color: #ffffff;
 }
+
+.scroll::-webkit-scrollbar{
+  background: transparent;
+  width: 5px !important;
+}
+
+.scroll::-webkit-scrollbar-track{
+  width: 5px !important;
+}
+
+.scroll::-webkit-scrollbar-button{
+  display: none;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+  background-color: #fff1;
+  border-radius: 10px;
+}
