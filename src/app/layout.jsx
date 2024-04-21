@@ -3,6 +3,7 @@ import "./globals.css";
 import Logo from "@/components/Logo";
 import RightTab from "@/components/RightTab";
 import "@/assets/font.css"
+import NavigationBar from "@/components/RightTab/NavigationBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
           <Logo />
           <div className="container m-auto h-screen">
             <RightTab />
+            <NavigationBar />
             <div className="w-full h-screen md:w-1/2 flex justify-center items-center">
               {children}
             </div>

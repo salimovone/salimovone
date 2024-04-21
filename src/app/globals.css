@@ -121,3 +121,12 @@ textarea{
   background-color: #fff1;
   border-radius: 10px;
 }
+
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #fff1;
+}

@@ -61,7 +61,7 @@ const Contact = () => {
           type="submit"
           value={"send"}
           className={
-            "absolute bottom-[2px] right-[4px] rounded-br-[30px] rounded-tl-[30px] bg-sky-600 px-12 py-2 "
+            "scroll absolute bottom-[2px] right-[4px] rounded-br-[30px] rounded-tl-[30px] bg-[var(--main-color)] px-12 py-2 "
           }
           onClick={saveData}
         />
