@@ -1,0 +1,11 @@
+.main {
+    backdrop-filter: blur(8px);
+}
+
+.li {
+    background-color: #fff2;
+}
+
+.li::marker{
+    content: "";
+}

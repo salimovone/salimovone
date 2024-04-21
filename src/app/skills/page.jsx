@@ -12,7 +12,6 @@ const Skills = () => {
     const dbRef = ref(db, "data/skills")
     const snapshot = await get(dbRef)
     if(snapshot.exists()){
-      console.log(snapshot.val());
       setSkills(Object.values(snapshot.val()))
     } else {
       alert("no data")
