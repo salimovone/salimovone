@@ -1,6 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./contact.module.css";
 import { TbBrandTelegram } from "react-icons/tb"; 
 import { IoLogoInstagram } from "react-icons/io";
@@ -9,26 +8,6 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi"; 
 
 const Contact = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleWheel = (event) => {
-      const delta = event.deltaY;
-      event.preventDefault();
-      if (delta > 0) {
-        router.push("/me");
-      }
-      if (delta < 0) {
-        router.push("/");
-      }
-    };
-
-    document.addEventListener("wheel", handleWheel);
-    return () => {
-      document.removeEventListener("wheel", handleWheel);
-    };
-  }, []);
-
   return (
     <div className="h-screen w-full text-white flex justify-center flex-col items-center">
       <form className="max-w-[400px] w-full h-[300px] p-1 relative">
@@ -41,6 +20,7 @@ const Contact = () => {
           type="email"
           className="w-full bg-transparent border border-[var(--main-color)] h-6 p-4 px-6 my-1"
           placeholder="Email"
+          required
         />
         <textarea
           type="text"

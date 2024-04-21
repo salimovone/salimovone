@@ -1,27 +1,7 @@
 "use client";
-import { useRouter } from "next/navigation";
-import React, { useEffect } from "react";
+import React from "react";
 
 const Experience = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleWheel = (event) => {
-      const delta = event.deltaY;
-      event.preventDefault();
-      if (delta > 0) {
-        router.push("/qmark");
-      }
-      if (delta < 0) {
-        router.push("/skills");
-      }
-    };
-
-    document.addEventListener("wheel", handleWheel);
-    return () => {
-      document.removeEventListener("wheel", handleWheel);
-    };
-  }, []);
 
   let experience = [
     {

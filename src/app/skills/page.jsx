@@ -1,28 +1,7 @@
 "use client";
-import { useRouter } from "next/navigation";
-import React, { useEffect } from "react";
 import styles from "./skills.module.css";
 
 const Skills = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleWheel = (event) => {
-      const delta = event.deltaY;
-      event.preventDefault();
-      if (delta > 0) {
-        router.push("/experience");
-      }
-      if (delta < 0) {
-        router.push("/me");
-      }
-    };
-
-    document.addEventListener("wheel", handleWheel);
-    return () => {
-      document.removeEventListener("wheel", handleWheel);
-    };
-  }, []);
 
   let skills = [
     {
