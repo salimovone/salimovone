@@ -16,7 +16,7 @@ const ProgressBar = ({ duration, name, percent, color }) => {
     }, duration / percent);
 
     return () => clearInterval(interval);
-  }, [duration]);
+  }, [duration, percent]);
 
   return (
     <div className="progress-bar">

@@ -81,7 +81,7 @@ const Skills = () => {
       <h1 className="mb-4">Skills page in edit mode</h1>
       {skills.map((item, index) => {
         return (
-          <div className="w-full flex justify-between mb-2 bg-[#fff2] items-center px-3 py-1 rounded">
+          <div key={index+1} className="w-full flex justify-between mb-2 bg-[#fff2] items-center px-3 py-1 rounded">
             <span className={index === inEdit && "hidden"}>{item.value}</span>
             <input
               type="text"

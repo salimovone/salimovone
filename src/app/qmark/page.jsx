@@ -9,4 +9,3 @@ const QMark = () => {
   );
 };
 
-export default QMark;

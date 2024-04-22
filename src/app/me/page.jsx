@@ -11,10 +11,9 @@ const Me = () => {
           I always want to make programs to solve Technical problems because I
           love to Automate things.
         </p>
-        <p className="mb-6">People say I'm a Quiet person when I am working on something.</p>
+        <p className="mb-6">People say Im a Quiet person when I am working on something.</p>
       </div>
     </div>
   );
 };
 
-export default Me;
