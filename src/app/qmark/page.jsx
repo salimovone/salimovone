@@ -1,4 +1,3 @@
-"use client"
 
 const QMark = () => {
 
@@ -9,3 +8,4 @@ const QMark = () => {
   );
 };
 
+export default QMark
