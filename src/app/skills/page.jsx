@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <div className="h-screen w-full text-white flex items-center px-5">
       <ul className={`${styles.ul}`}>
-        {skills.map((item, index) => (
+        {skills?.map((item, index) => (
           <li key={index + 1} className={`${styles.li}`}>
             {item?.value}
           </li>
