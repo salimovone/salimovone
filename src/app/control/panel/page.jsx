@@ -5,34 +5,34 @@ import styles from "./controlPanel.module.css";
 import { pages } from "./helper";
 import Game from "@/components/control/Game";
 import Auth from "@/components/Auth";
-import { signOut } from "firebase/auth";
-import { auth } from "@/firebaseConfig";
+// import { signOut } from "firebase/auth";
+// import { auth } from "@/firebaseConfig";
 
 const ControlPanel = () => {
   const [page, setPage] = useState(<Game />);
   const [active, setActive] = useState(0);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [user, setUser] = useState("");
+  // const [user, setUser] = useState("");
 
   const logChange = (signedUser) => {
-    setUser(signedUser);
+    // setUser(signedUser);
     setIsLoggedIn(true);
   };
 
-  const logout = async () => {
-    await signOut(auth);
-  };
+  // const logout = async () => {
+  //   await signOut(auth);
+  // };
 
   return isLoggedIn ? (
     <div
       className={
         "text-white absolute z-[999] top-0 left-0 w-screen h-screen grid grid-cols-12 grid-rows-12 " +
-        styles.main
+        styles?.main
       }
     >
       <div className="col-span-2 border-r h-screen border-[val(--main-color)] max-md:hidden">
         <ul className="w-full px-5 mt-4">
-          {pages.map((item, index) => (
+          {pages?.map((item, index) => (
             <li
               key={index + 1}
               onClick={() => {
