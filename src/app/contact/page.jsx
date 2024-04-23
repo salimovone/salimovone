@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import styles from "./contact.module.css";
 import SocialMedia from "@/components/SocialMedia";
 import app from "@/firebaseConfig";
 import { getDatabase, push, ref, set } from "firebase/database";
@@ -49,10 +48,7 @@ const Contact = () => {
         />
         <textarea
           type="text"
-          className={
-            "w-full bg-transparent h-[196px] border border-[var(--main-color)] p-4 px-6 rounded-b-[30px] " +
-            styles.textarea
-          }
+          className={`w-full bg-transparent h-[196px] border border-[var(--main-color)] p-4 px-6 rounded-b-[30px] bg-black text-[aqua]`}
           placeholder="Message"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
@@ -71,5 +67,4 @@ const Contact = () => {
   );
 };
 
-
-export default Contact
+export default Contact;

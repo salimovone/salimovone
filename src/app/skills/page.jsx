@@ -14,7 +14,7 @@ const Skills = () => {
     if(snapshot.exists()){
       setSkills(Object.values(snapshot.val()))
     } else {
-      alert("no data")
+      console.log("no data")
     }
   }
 
