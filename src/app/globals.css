@@ -130,3 +130,7 @@ textarea{
   border-radius: 8px;
   background-color: #fff1;
 }
+
+.navBox{
+  backdrop-filter: blur(8px);
+}
