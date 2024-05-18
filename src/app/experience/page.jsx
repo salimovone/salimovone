@@ -36,7 +36,7 @@ const Experience = () => {
             {item?.name}
             <span className="text-xs text-green-600">
               {" "}
-              [{item?.year.begin} to {item?.year.end}]
+              [{item?.year?.begin} to {item?.year?.end}]
             </span>
             <p className="font-normal text-base text-slate-400">
               {item?.about}
