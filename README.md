@@ -58,6 +58,18 @@
 
 ---
 
-### 🐍 GitHub Contribution Snake
+### 🔥 GitHub Streak Stats
 
-![snake gif](https://github.com/salimovone/salimovone/blob/output/github-contribution-grid-snake.svg)
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=salimovone&theme=radical" alt="streak-stats" />
+</p>
+
+---
+
+### name1
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=salimovone&theme=radical" alt="contribution-graph" />
+</p>
+
+
