@@ -56,20 +56,3 @@
   <img src="https://github-profile-trophy.vercel.app/?username=salimovone&theme=algolia&no-bg=true&no-frame=true" />
 </p>
 
----
-
-### 🔥 GitHub Streak Stats
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=salimovone&theme=radical" alt="streak-stats" />
-</p>
-
----
-
-### name1
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=salimovone&theme=radical" alt="contribution-graph" />
-</p>
-
-
