@@ -59,10 +59,10 @@
 </p>
 
 <h3 align="center" style="color: #0e75b6;">WakaTime Stats:</h3>
-<p align="center">
+<p align="left">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=salimovone&layout=compact&theme=radical" alt="waka-time-stats" />
 </p>
 
-<p align="center">
+<p align="right">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=salimovone&show_icons=true&locale=en&layout=compact&theme=radical" alt="salimovone" />
 </p>
