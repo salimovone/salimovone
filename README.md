@@ -42,6 +42,7 @@
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=salimovone&show_icons=true&theme=radical" alt="github-stats" />
+  <br />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=salimovone&layout=compact&theme=radical" alt="top-langs" />
   <br/>
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=salimovone&layout=compact&theme=radical" alt="wakatime-stats" />
