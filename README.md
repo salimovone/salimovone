@@ -50,9 +50,6 @@
 
 ---
 
-### ⏱️ WakaTime Stats:
-![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=salimovone&layout=compact)
-
 ### 🏆 GitHub Trophies
 
 <p align="center">
