@@ -1,27 +1,83 @@
-<img src="./public/profile-cover.svg" width="100%" alt="Sardor Salimov · Systems developer · Tashkent, Uzbekistan" />
+<a href="https://github.com/salimovone?tab=repositories">
+  <img src="./assets/hero.svg" width="100%" alt="Sardor Salimov — systems developer from Tashkent. A terminal boot log types out, then the name appears beside an extruded S monogram." />
+</a>
 
-# Hi, I’m Sardor.
+<p align="center">
+  <a href="https://www.linkedin.com/in/salimovone/"><img src="https://img.shields.io/badge/LinkedIn-salimovone-0d1322?style=for-the-badge&logo=linkedin&logoColor=a8bbff&labelColor=0a0e19" alt="LinkedIn" /></a>
+  <a href="https://medium.com/@salimovone"><img src="https://img.shields.io/badge/Medium-@salimovone-0d1322?style=for-the-badge&logo=medium&logoColor=a8bbff&labelColor=0a0e19" alt="Medium" /></a>
+  <a href="https://leetcode.com/salimovone/"><img src="https://img.shields.io/badge/LeetCode-salimovone-0d1322?style=for-the-badge&logo=leetcode&logoColor=f0b86e&labelColor=0a0e19" alt="LeetCode" /></a>
+  <a href="https://www.hackerrank.com/pcprogrammer183"><img src="https://img.shields.io/badge/HackerRank-pcprogrammer183-0d1322?style=for-the-badge&logo=hackerrank&logoColor=7ee0a1&labelColor=0a0e19" alt="HackerRank" /></a>
+</p>
 
-I’m a **systems developer** in Tashkent, Uzbekistan. I write C# and C++ to explore how Windows processes share data, how applications interact with drivers, and what the operating system can tell us about memory use.
+### `> whoami`
 
-[LinkedIn](https://www.linkedin.com/in/salimovone/) · [Medium](https://medium.com/@salimovone) · [All repositories](https://github.com/salimovone?tab=repositories)
+```cpp
+// sardor.hpp — compiled in Tashkent, UTC+05:00
+#pragma once
 
-## Systems projects
+namespace salimovone {
 
-[![Shared memory · Process communication](./public/shared-memory.svg)](https://github.com/salimovone/Inter-process-communication)
+struct Sardor final {
+    static constexpr const char* role     = "systems developer";
+    static constexpr const char* speaks[] = { "C++", "C#", "TypeScript" };
+    static constexpr const char* lives_in = "the space between user mode and ring 0";
 
-Follow a message from the [producer](https://github.com/salimovone/Inter-process-communication/blob/HEAD/Shared_memory_producer/RingBufferProducer.cs) to the [consumer](https://github.com/salimovone/Inter-process-communication/blob/HEAD/Shared_memory_consumer/RingBufferConsumer.cs). Both sides work with the same ring buffer.
+    // what I'm actually curious about
+    void explore() const {
+        how_processes_share_memory();    // → shared memory, ring buffers
+        how_apps_talk_to_drivers();      // → DeviceIoControl, IRPs
+        what_the_os_knows_about_ram();   // → performance counters
+    }
 
-[![First kernel driver · Windows kernel](./public/kernel-driver.svg)](https://github.com/salimovone/first_driver)
+    // and when the kernel needs a break
+    void unwind() const { build_interfaces_with(React, Redux); }
+};
 
-My first Windows kernel-mode driver. Read the [user-mode program](https://github.com/salimovone/first_driver/blob/HEAD/user_mode/src/main.cpp) alongside the [driver entry point](https://github.com/salimovone/first_driver/blob/HEAD/kernel_mode/src/main.cpp) to see each side of the project.
+} // namespace salimovone
+```
 
-[![Process Resource Monitor · Memory diagnostics](./public/memory-counter.svg)](https://github.com/salimovone/ProcessResourceMonitor)
+## `~/systems`
 
-How much private memory is Notepad using? A [small C# console program](https://github.com/salimovone/ProcessResourceMonitor/blob/HEAD/ProcessResourceMonitor/Program.cs) reads its private working set from a Windows performance counter and prints the result in megabytes.
+<a href="https://github.com/salimovone/Inter-process-communication">
+  <img src="./assets/shared-memory.svg" width="100%" alt="Shared memory — a producer and a consumer exchanging messages through an animated ring buffer" />
+</a>
+<sub>&nbsp;&nbsp;Follow one message from the <a href="https://github.com/salimovone/Inter-process-communication/blob/HEAD/Shared_memory_producer/RingBufferProducer.cs"><code>producer</code></a> to the <a href="https://github.com/salimovone/Inter-process-communication/blob/HEAD/Shared_memory_consumer/RingBufferConsumer.cs"><code>consumer</code></a> — both sides work with the same ring buffer.</sub>
 
-## Beyond systems
+<br /><br />
 
-I also build interfaces with React and TypeScript. [Chess](https://github.com/salimovone/chess) uses Redux to manage board state, and [Weather](https://github.com/salimovone/weather) brings current conditions and forecasts into one view.
+<a href="https://github.com/salimovone/first_driver">
+  <img src="./assets/kernel-driver.svg" width="100%" alt="First kernel driver — an I/O request packet crossing from user mode into kernel mode and back" />
+</a>
+<sub>&nbsp;&nbsp;Read the <a href="https://github.com/salimovone/first_driver/blob/HEAD/user_mode/src/main.cpp"><code>user-mode program</code></a> side by side with the <a href="https://github.com/salimovone/first_driver/blob/HEAD/kernel_mode/src/main.cpp"><code>driver entry point</code></a>.</sub>
 
-Find me on [LeetCode](https://leetcode.com/salimovone/), [HackerRank](https://www.hackerrank.com/pcprogrammer183) and [Instagram](https://www.instagram.com/sardor20.05/).
+<br /><br />
+
+<a href="https://github.com/salimovone/ProcessResourceMonitor">
+  <img src="./assets/memory-monitor.svg" width="100%" alt="Process Resource Monitor — a live graph of Notepad's private working set in megabytes" />
+</a>
+<sub>&nbsp;&nbsp;The whole trick fits in <a href="https://github.com/salimovone/ProcessResourceMonitor/blob/HEAD/ProcessResourceMonitor/Program.cs"><code>Program.cs</code></a>: one Windows performance counter, printed in megabytes.</sub>
+
+## `~/stack`
+
+<img src="./assets/address-space.svg" width="100%" alt="Tech stack drawn as a memory map: C++, C#, Win32 API and WDK in the systems region; TypeScript, React and Redux in the interfaces region" />
+
+## `~/side-quests`
+
+<p>
+  <a href="https://github.com/salimovone/chess"><img src="./assets/chess.svg" width="49%" alt="Chess — React and Redux, a knight hopping across the board" /></a>
+  <a href="https://github.com/salimovone/weather"><img src="./assets/weather.svg" width="49%" alt="Weather — React and TypeScript, a sun turning behind a drifting cloud" /></a>
+</p>
+
+<details>
+  <summary><b>🛠 How this page is built</b></summary>
+  <br />
+
+  No third-party widgets, no stats cards that break overnight. Every banner here is a hand-rolled SVG animated with SMIL, generated by
+  [`assets/generate.mjs`](./assets/generate.mjs). Change the text, run `node assets/generate.mjs assets`, commit.
+</details>
+
+<br />
+
+<img src="./assets/footer.svg" width="100%" alt="C:\Users\sardor> shutdown /s /t 0 /c &quot;thanks for reading — see you in ring 0&quot;" />
+
+<p align="right"><sub><a href="https://www.instagram.com/sardor20.05/">instagram</a> · <a href="https://github.com/salimovone?tab=repositories">all repositories →</a></sub></p>

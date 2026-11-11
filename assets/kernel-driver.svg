@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1000" height="230" viewBox="0 0 1000 230" role="img" aria-label="First kernel driver: an I/O request packet travelling from user mode into kernel mode and back">
+<defs>
+<linearGradient id="wash" x2="1" y2=".4"><stop stop-color="#0d1322"/><stop offset=".55" stop-color="#0d1322"/><stop offset="1" stop-color="#a59cff" stop-opacity=".16"/></linearGradient>
+<pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#a59cff" stroke-width=".7" opacity="0.09"/></pattern>
+<clipPath id="frame"><rect width="1000" height="230" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#frame)">
+<rect width="1000" height="230" fill="#0a0e19"/>
+<rect width="1000" height="230" fill="url(#wash)"/>
+<rect x="540" width="460" height="230" fill="url(#g)"/>
+<rect width="4" height="230" fill="#a59cff"/>
+<text x="40" y="56" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="13" letter-spacing="2" fill="#a59cff">WINDOWS KERNEL · C++</text>
+<text x="38" y="100" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-weight="700" font-size="34" fill="#f0f4ff">First kernel driver</text>
+<text x="40" y="138" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" fill="#8391b3">A user-mode program talks to my first kernel-mode driver.</text>
+<text x="40" y="162" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" fill="#8391b3">One request goes down through the boundary and comes back.</text>
+<text x="40" y="206" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="12" fill="#55617f">→ salimovone/first_driver</text>
+<rect x="560" y="36" width="410" height="68" rx="10" fill="#151a33" stroke="#a59cff" stroke-opacity=".25"/>
+<rect x="560" y="132" width="410" height="68" rx="10" fill="#1d1838" stroke="#a59cff" stroke-opacity=".4"/>
+<text x="958" y="56" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="10" letter-spacing="1.5" fill="#8391b3">USER MODE · RING 3</text>
+<text x="958" y="194" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="10" letter-spacing="1.5" fill="#a59cff">KERNEL MODE · RING 0</text>
+<line x1="548" y1="118" x2="982" y2="118" stroke="#a59cff" stroke-width="1.5" stroke-dasharray="8 6"><animate attributeName="stroke-dashoffset" values="0;-28" dur="1.4s" repeatCount="indefinite"/></line>
+<rect x="580" y="52" width="132" height="36" rx="7" fill="#0f1426" stroke="#a59cff" stroke-opacity=".7"/>
+<text x="646" y="75" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="12" fill="#f0f4ff">main.cpp</text>
+<rect x="850" y="148" width="104" height="36" rx="7" fill="#0f1426" stroke="#a59cff"/>
+<text x="902" y="171" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="12" fill="#f0f4ff">DriverEntry</text>
+<path d="M712 70H806V170H850V182H784V82H712Z" fill="none" stroke="#a59cff" stroke-opacity=".3" stroke-width="1.5"/>
+<text x="814" y="112" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="10" fill="#8391b3">DeviceIoControl ↓</text>
+<text x="776" y="140" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="10" fill="#8391b3">↑ IoCompleteRequest</text>
+<g><animateMotion dur="3.6s" repeatCount="indefinite" path="M712 70H806V170H850V182H784V82H712Z"/>
+<rect x="-14" y="-8" width="28" height="16" rx="4" fill="#a59cff"/><text y="4" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace" font-size="9" font-weight="700" fill="#14112b">IRP</text></g>
+</g>
+<rect x=".5" y=".5" width="999" height="229" rx="16" fill="none" stroke="#a59cff" stroke-opacity=".28"/>
+</svg>
