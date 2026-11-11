@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400"><defs><pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#91a7db" stroke-width=".8"/></pattern></defs><rect width="480" height="400" fill="#dce6ff"/><rect width="480" height="400" fill="url(#g)"/><g transform="translate(110 45) rotate(-10 120 140) scale(1.6)"><path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(16 16)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(15 15)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(14 14)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(13 13)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(12 12)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(11 11)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(10 10)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(9 9)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(8 8)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(7 7)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(6 6)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(5 5)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(4 4)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(3 3)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(2 2)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(1 1)" fill="#2751d7" stroke="#173896" stroke-width="1.6"/>
-<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(0 0)" fill="#e7edff" stroke="#173896" stroke-width="1.6"/></g><g font-family="monospace" font-size="12" fill="#173896"><text x="16" y="25">S / S</text><text x="464" y="383" text-anchor="end">@SALIMOVONE</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400"><defs><radialGradient id="plate" cx="64%" cy="35%" r="85%"><stop stop-color="#273657"/><stop offset="1" stop-color="#101929"/></radialGradient><linearGradient id="metal" x2="85%" y2="100%"><stop stop-color="#e2faff"/><stop offset=".48" stop-color="#a5caff"/><stop offset="1" stop-color="#897de6"/></linearGradient><pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#384968" stroke-width=".8"/></pattern></defs><rect width="480" height="400" fill="url(#plate)"/><rect width="480" height="400" fill="url(#g)"/><g transform="translate(110 45) rotate(-10 120 140) scale(1.6)"><path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(16 16)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(15 15)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(14 14)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(13 13)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(12 12)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(11 11)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(10 10)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(9 9)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(8 8)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(7 7)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(6 6)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(5 5)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(4 4)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(3 3)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(2 2)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(1 1)" fill="#4b5ba6" stroke="#475791" stroke-width="1.6"/>
+<path d="M32 0H144V32H48V64H112L144 96V144L112 176H0V144H96V112H32L0 80V32Z" transform="translate(0 0)" fill="url(#metal)" stroke="#475791" stroke-width="1.6"/></g><g font-family="monospace" font-size="12" fill="#becceb"><text x="16" y="25">S / S</text><text x="464" y="383" text-anchor="end">@SALIMOVONE</text></g></svg>

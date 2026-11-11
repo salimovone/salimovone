@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="156" viewBox="0 0 540 156">
+  <defs>
+    <linearGradient id="wash" x2="1" y2=".55" gradientUnits="objectBoundingBox"><stop stop-color="#f1f5fa"/><stop offset="1" stop-color="#b6dadb"/></linearGradient>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#155862" opacity=".14"/></pattern>
+  </defs>
+  <rect width="540" height="156" rx="16" fill="url(#wash)"/>
+  <rect width="540" height="156" rx="16" fill="url(#grid)"/>
+  <circle cx="81" cy="78" r="54" fill="#fff" fill-opacity=".55" stroke="#155862" stroke-opacity=".4"/>
+  <g transform="translate(23 34) scale(.9)" stroke="#155862" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="13" y="30" width="33" height="36" rx="5"/><rect x="84" y="30" width="33" height="36" rx="5"/><path d="M46 40h38m-8-6 8 6-8 6M84 56H46m8 6-8-6 8-6"/></g>
+  <text x="160" y="64" font-family="monospace" font-size="14" letter-spacing="1.2" fill="#155862">PROCESS COMMUNICATION</text>
+  <text x="158" y="100" font-family="Arial,sans-serif" font-weight="bold" font-size="28" fill="#1b283a">Shared memory</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="156" viewBox="0 0 540 156">
+  <defs>
+    <linearGradient id="wash" x2="1" y2=".55" gradientUnits="objectBoundingBox"><stop stop-color="#f1f5fa"/><stop offset="1" stop-color="#c7dbba"/></linearGradient>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#365a39" opacity=".14"/></pattern>
+  </defs>
+  <rect width="540" height="156" rx="16" fill="url(#wash)"/>
+  <rect width="540" height="156" rx="16" fill="url(#grid)"/>
+  <circle cx="81" cy="78" r="54" fill="#fff" fill-opacity=".55" stroke="#365a39" stroke-opacity=".4"/>
+  <g transform="translate(23 34) scale(.9)" stroke="#365a39" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="21" y="23" width="88" height="53" rx="6"/><path d="M28 52h14l7-14 10 27 10-33 10 20h21"/></g>
+  <text x="160" y="64" font-family="monospace" font-size="14" letter-spacing="1.2" fill="#365a39">MEMORY DIAGNOSTICS</text>
+  <text x="158" y="100" font-family="Arial,sans-serif" font-weight="bold" font-size="28" fill="#1b283a">Process Resource Monitor</text>
+</svg>

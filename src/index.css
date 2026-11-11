@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 :root {
-  --ink: #171e2a;
-  --blue: #2149cb;
-  --paper: #f7f6ef;
-  --line: #c9cbd0;
+  color-scheme: dark;
+  --ink: #f0f4ff;
+  --blue: #a8bbff;
+  --paper: #0a0e19;
+  --line: #98b5e137;
   color: var(--ink);
   background: var(--paper);
   font-family: Inter, 'Segoe UI', sans-serif;
@@ -66,7 +67,7 @@ nav a:hover,
   position: absolute;
   left: 1rem;
   top: -5rem;
-  background: white;
+  background: #202c49;
   padding: 12px;
 }
 .skip:focus {
@@ -122,7 +123,7 @@ h1 em {
 .intro,
 .project > p:last-child {
   line-height: 1.65;
-  color: #454e5c;
+  color: #c2cce0;
 }
 .intro {
   max-width: 44ch;
@@ -133,13 +134,13 @@ h1 em {
   gap: 24px;
   align-items: center;
   background: var(--blue);
-  color: white;
+  color: #10182e;
   padding: 13px 19px;
   margin-top: 23px;
   font-weight: 600;
 }
 .button:hover {
-  background: #18389d;
+  background: #cbd6ff;
 }
 figure img {
   display: block;
@@ -166,74 +167,6 @@ h2 {
 }
 .project {
   display: block;
-}
-.art {
-  height: clamp(130px, 15vw, 185px);
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.chess {
-  background: #e3e9fa;
-}
-.board {
-  color: #152f78;
-  display: grid;
-  place-items: center;
-  width: 110px;
-  height: 110px;
-  font:
-    82px Georgia,
-    serif;
-  background: repeating-conic-gradient(#b7c8ef 0 25%, #f0f4ff 0 50%) 0 0/28px
-    28px;
-  transform: rotate(-8deg);
-  box-shadow: 5px 6px #879dcc;
-}
-.weather {
-  background: #f6e1ba;
-}
-.sun {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: #e78121;
-}
-.sun i {
-  position: absolute;
-  width: 106px;
-  height: 36px;
-  background: #fff8e9;
-  top: 54px;
-  left: 11px;
-  border-radius: 40px;
-  box-shadow: -20px 11px #d7ae7a;
-}
-.sun i:before {
-  content: '';
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  background: inherit;
-  border-radius: 50%;
-  left: 17px;
-  bottom: 5px;
-}
-.process {
-  background: #d5e7dc;
-}
-.meter {
-  height: 84px;
-  width: 150px;
-  display: flex;
-  align-items: flex-end;
-  gap: 4px;
-  border-bottom: 2px solid #376450;
-}
-.meter i {
-  flex: 1;
-  background: #376450;
 }
 .project .mono {
   margin: 17px 0 6px;
@@ -277,9 +210,6 @@ footer h2 {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .art {
-    height: 160px;
-  }
   .heading {
     align-items: baseline;
   }
@@ -305,5 +235,109 @@ footer h2 {
   .brand img {
     width: 24px;
     height: 24px;
+  }
+}
+
+/* The colored backdrop stays behind the text and the frosted surfaces. */
+body {
+  background:
+    radial-gradient(ellipse at 4% 16%, #132f41 0, transparent 37%),
+    radial-gradient(ellipse at 83% 23%, #282449 0, transparent 36%),
+    radial-gradient(ellipse at 58% 79%, #113031 0, transparent 36%),
+    linear-gradient(145deg, #0b101c, #101321 62%, #090e17);
+  min-height: 100vh;
+  padding: 18px 0 32px;
+}
+header,
+figure,
+.project,
+footer {
+  background: linear-gradient(125deg, #24314ac9, #131b2bb3);
+  border: 1px solid #afc9ff31;
+  border-radius: 22px;
+  box-shadow:
+    inset 0 1px 1px #dbe4ff18,
+    0 14px 44px -24px #020713c4;
+  -webkit-backdrop-filter: blur(20px) saturate(130%);
+  backdrop-filter: blur(20px) saturate(130%);
+}
+header {
+  position: sticky;
+  top: 10px;
+  z-index: 1;
+  padding: 14px clamp(12px, 2vw, 28px);
+}
+#main,
+#work,
+#contact {
+  scroll-margin-top: 96px;
+}
+figure {
+  padding: clamp(10px, 1.5vw, 22px);
+  transform: rotate(2deg);
+}
+figure img {
+  border-radius: 12px;
+}
+.monogram {
+  position: relative;
+  aspect-ratio: 6 / 5;
+}
+.monogram canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background:
+    linear-gradient(#9ebfff13 1px, transparent 1px) 0 0 / 5% 6%,
+    linear-gradient(90deg, #9ebfff13 1px, transparent 1px) 0 0 / 5% 6%,
+    radial-gradient(ellipse at 64% 35%, #29375a, #101929 85%);
+}
+.button {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px #738eff24;
+}
+.heading {
+  border-color: var(--line);
+}
+.project {
+  padding: 14px 14px 22px;
+}
+.project-art {
+  /* The same illustrations also appear on the GitHub profile. */
+  filter: invert(1) hue-rotate(180deg);
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+.project p {
+  padding-inline: 6px;
+}
+.project:hover,
+.project:focus-visible {
+  background: linear-gradient(125deg, #30415ee6, #1b2a3edb);
+  box-shadow:
+    inset 0 1px 1px #dbe4ff18,
+    0 12px 30px -16px #01040cb3;
+}
+footer {
+  padding: clamp(20px, 3vw, 36px);
+}
+@media (max-width: 700px) {
+  figure {
+    transform: none;
+  }
+  .projects {
+    gap: 16px;
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  header,
+  figure,
+  .project,
+  footer {
+    background: #172133;
+    backdrop-filter: none;
   }
 }

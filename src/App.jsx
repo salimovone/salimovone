@@ -1,52 +1,52 @@
+import { useEffect, useRef } from 'react'
+
 const github = 'https://github.com/salimovone'
 const projects = [
   {
-    name: 'Chess',
-    repo: 'chess',
-    stack: 'React / TypeScript / Redux',
+    slug: 'shared-memory',
+    repo: 'Inter-process-communication',
+    name: 'Shared memory',
+    stack: 'C# / Inter-process communication',
     description:
-      'An interactive chessboard built from individual squares, pieces and shared board state.',
-    art: 'chess',
+      'A producer and a consumer exchange data through a shared ring buffer.',
   },
   {
-    name: 'Weather',
-    repo: 'weather',
-    stack: 'React / TypeScript',
+    slug: 'kernel-driver',
+    repo: 'first_driver',
+    name: 'First kernel driver',
+    stack: 'C++ / Windows',
     description:
-      'A searchable weather interface for current conditions and the daily outlook.',
-    art: 'weather',
+      'A Windows driver project with separate kernel-mode and user-mode programs.',
   },
   {
-    name: 'Process Resource Monitor',
+    slug: 'memory-counter',
     repo: 'ProcessResourceMonitor',
-    stack: 'C# / Windows',
+    name: 'Process Resource Monitor',
+    stack: 'C# / Performance counters',
     description:
-      'A console experiment that measures the private memory used by a running Notepad process.',
-    art: 'process',
+      'A console tool that reads the private working set of a running Notepad process in megabytes.',
   },
 ]
 
-function ProjectArt({ type }) {
-  return (
-    <div className={'art ' + type} aria-hidden="true">
-      {type === 'chess' && <span className="board">♞</span>}
-      {type === 'weather' && (
-        <span className="sun">
-          <i />
-        </span>
-      )}
-      {type === 'process' && (
-        <div className="meter">
-          {[32, 48, 44, 64, 52, 80, 72, 88, 66, 50, 74, 60].map((value, i) => (
-            <i key={i} style={{ height: value + '%' }} />
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
-
 export default function App() {
+  const plate = useRef(null)
+
+  useEffect(() => {
+    let cancelled = false
+    let dispose
+    import('./monogram.js')
+      .then(({ mountMonogram }) => {
+        if (!cancelled) dispose = mountMonogram(plate.current)
+      })
+      .catch(() => {
+        // The SVG remains visible if the module or WebGL is unavailable.
+      })
+    return () => {
+      cancelled = true
+      dispose?.()
+    }
+  }, [])
+
   return (
     <>
       <a className="skip" href="#main">
@@ -80,33 +80,38 @@ export default function App() {
               <em>Salimov.</em>
             </h1>
             <p className="intro">
-              Frontend developer building with React and TypeScript, and
-              exploring how Windows works beneath the interface.
+              Systems developer working with C++ and C# on Windows drivers,
+              shared memory and process diagnostics.
             </p>
             <a className="button" href="#work">
               Explore my work <span aria-hidden="true">↓</span>
             </a>
           </div>
           <figure>
-            <img
-              src={import.meta.env.BASE_URL + 'profile-print.svg'}
-              alt="An isometric letter S built from stepped layers of blue ink."
-            />
+            <div className="monogram" ref={plate}>
+              <img
+                src={import.meta.env.BASE_URL + 'profile-print.svg'}
+                alt="An isometric letter S built from stepped layers of blue ink."
+              />
+            </div>
           </figure>
         </section>
         <section id="work" aria-labelledby="work-title">
           <div className="heading">
-            <h2 id="work-title">Selected work</h2>
+            <h2 id="work-title">Systems projects</h2>
             <a href={github + '?tab=repositories'}>All repositories ↗</a>
           </div>
           <div className="projects">
             {projects.map((p) => (
               <a key={p.repo} className="project" href={github + '/' + p.repo}>
-                <ProjectArt type={p.art} />
-                <p className="mono">{p.stack}</p>
                 <h3>
-                  {p.name} <span aria-hidden="true">↗</span>
+                  <img
+                    className="project-art"
+                    src={import.meta.env.BASE_URL + p.slug + '.svg'}
+                    alt={p.name}
+                  />
                 </h3>
+                <p className="mono">{p.stack}</p>
                 <p>{p.description}</p>
               </a>
             ))}
